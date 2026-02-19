@@ -1,0 +1,18 @@
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    border-color: var(--text);
+    color: var(--text);
+}
