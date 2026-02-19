@@ -18,12 +18,13 @@
   --bg: #0a0a0a;
   --text: #ffffff;
   --text-muted: #a3a3a3;
-  --text-dim: #525252;
+  --text-dim: #737373;
+  /* Lighter for better contrast in dark mode */
   --border: #262626;
   --accent: #ffffff;
   --status-active: #4ade80;
-  --card-bg: #141414;
-  --card-hover: #1a1a1a;
+  --card-bg: #111111;
+  --card-hover: #161616;
 }
 
 * {
@@ -165,6 +166,12 @@ body {
   padding: 2.5rem;
   border-radius: 2px;
   background: var(--card-bg);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-box:hover {
+  background: var(--card-hover);
+  border-color: var(--text);
 }
 
 .feature-title {

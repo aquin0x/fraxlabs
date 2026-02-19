@@ -116,16 +116,15 @@ export default function App() {
         </Section>
 
         <Section num="05" label="AMİRAL GEMİSİ ÜRÜN">
-          <motion.div
+          <div
             className="feature-box"
-            whileHover={{ background: '#f8f8f8', borderColor: 'var(--text)' }}
-            style={{ cursor: 'pointer', transition: 'all 0.3s ease' }}
+            style={{ cursor: 'pointer' }}
             onClick={() => window.open('https://ugra.frax.tr/', '_blank')}
           >
-            <div className="feature-title">Ugra</div>
+            <div className="feature-title" style={{ color: 'var(--text)' }}>Ugra</div>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-dim)', marginBottom: '1.5rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Otonom İşletme İşletim Sistemi</div>
 
-            <div className="feature-desc" style={{ lineHeight: '1.7', marginBottom: '2.5rem' }}>
+            <div className="feature-desc" style={{ color: 'var(--text-muted)', lineHeight: '1.7', marginBottom: '2.5rem' }}>
               Ugra, PWA mimarisiyle uygulama indirme bariyerini kaldıran ve AI desteğiyle işletme yönetimini otonom hale getiren bir sadakat platformudur. İşletme sahipleri için veriyi proaktif kararlara dönüştüren dijital bir iş ortağıdır.
             </div>
 
@@ -135,11 +134,11 @@ export default function App() {
                 <div>STATUS: ACTIVE_ALPHA</div>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 700, fontSize: '0.9rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 700, fontSize: '0.9rem', color: 'var(--text)' }}>
                 İNCELE <span style={{ fontSize: '1.2rem' }}>→</span>
               </div>
             </div>
-          </motion.div>
+          </div>
         </Section>
 
         <Section num="06" label="MANİFESTO">
