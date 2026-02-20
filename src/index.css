@@ -232,3 +232,21 @@ body {
   border-color: var(--text);
   color: var(--text);
 }
+
+.social-link {
+  color: var(--text-dim);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
+
+.social-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+  background: var(--card-hover);
+}

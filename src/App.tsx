@@ -1,5 +1,23 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { Instagram, Linkedin, Github } from 'lucide-react';
+
+const X = ({ size = 24 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+  </svg>
+);
+
 
 const LabMeta = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString('en-US', { hour12: false }));
@@ -166,9 +184,26 @@ export default function App() {
         </Section>
 
         <Section num="07" label="İLETİŞİM">
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
-            <a href="mailto:info@fraxlabs.co" style={{ color: 'var(--text)', textDecoration: 'none', fontWeight: 700 }}>info@fraxlabs.co</a>
-            <div style={{ color: 'var(--text-muted)' }}>İstanbul, TR</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <a href="mailto:info@fraxlabs.co" style={{ color: 'var(--text)', textDecoration: 'none', fontWeight: 700 }}>info@fraxlabs.io</a>
+              <div style={{ color: 'var(--text-muted)' }}>İstanbul, TR</div>
+            </div>
+
+            <div className="social-links" style={{ display: 'flex', gap: '1.25rem', alignItems: 'center' }}>
+              <a href="https://x.com/fraxlabsio" target="_blank" rel="noopener noreferrer" className="social-link" title="X (Twitter)">
+                <X size={18} />
+              </a>
+              <a href="https://instagram.com/fraxlabsio" target="_blank" rel="noopener noreferrer" className="social-link" title="Instagram">
+                <Instagram size={18} />
+              </a>
+              <a href="https://linkedin.com/company/fraxlabs" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
+                <Linkedin size={18} />
+              </a>
+              <a href="https://github.com/organizations/frax-labs" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
+                <Github size={18} />
+              </a>
+            </div>
           </div>
         </Section>
 
