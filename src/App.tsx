@@ -200,7 +200,7 @@ export default function App() {
               <a href="https://linkedin.com/company/fraxlabs" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
                 <Linkedin size={18} />
               </a>
-              <a href="https://github.com/organizations/frax-labs" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
+              <a href="https://github.com/frax-labs" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
                 <Github size={18} />
               </a>
             </div>
