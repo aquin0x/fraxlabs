@@ -126,10 +126,9 @@ export default function App() {
 
         <Section num="04" label="PROJE LABORATUVARI">
           <div>
-            <ProjectCard title="Ugra" status="LIVE" link="https://ugra.frax.tr/" />
-            <ProjectCard title="Mera" status="UPCOMING" />
-            <ProjectCard title="Vision Flow" status="UPCOMING" />
-            <ProjectCard title="Frax Connect" status="UPCOMING" />
+            <ProjectCard title="Ugra" status="Live" link="https://ugra.frax.tr/" />
+            <ProjectCard title="Mera" status="Cooking" />
+            <ProjectCard title="Xxxx" status="Upcoming" />
           </div>
         </Section>
 
