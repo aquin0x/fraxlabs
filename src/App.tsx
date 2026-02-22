@@ -79,7 +79,7 @@ export default function App() {
   return (
     <div className="lab-container">
       <aside className="lab-sidebar">
-        <div className="lab-logo" style={{ marginBottom: '2.5rem' }}>frax labs</div>
+
         <LabMeta />
         <button className="theme-toggle" onClick={toggleTheme}>
           {theme === 'light' ? '// dark_mode' : '// light_mode'}
