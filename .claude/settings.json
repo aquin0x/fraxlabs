@@ -6,7 +6,12 @@
       "Read(//c/Users/alper/Downloads/**)",
       "Bash(node -e ' *)",
       "Bash(rm -f scratch_template.html)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git rm *)",
+      "Bash(rmdir src/assets)",
+      "Bash(printf '\\\\n# Firebase deploy cache\\\\n.firebase\\\\n')",
+      "Bash(npm uninstall *)",
+      "Bash(rm -rf .firebase)"
     ]
   }
 }
