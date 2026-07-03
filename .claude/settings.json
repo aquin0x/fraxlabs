@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:claude.ai)",
+      "Bash(find \"c:/Users/alper/Desktop/antigravity_projects/fraxlabs/site_1\" -not -path \"*/node_modules/*\" -not -path \"*/.git/*\" \\\\\\( -iname \"*.dc.html\" -o -iname \"*design*\" -o -iname \"*frax*labs*\" \\\\\\) 2>/dev/null; echo \"---downloads---\"; ls -t \"c:/Users/alper/Downloads\" 2>/dev/null | head -20)",
+      "Read(//c/Users/alper/Downloads/**)",
+      "Bash(node -e ' *)",
+      "Bash(rm -f scratch_template.html)",
+      "Bash(npm run *)"
+    ]
+  }
+}
